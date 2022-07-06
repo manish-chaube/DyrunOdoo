@@ -3,15 +3,14 @@
 
 {
     'name': 'Recharge Website',
-    'version': '1.0.1',
-    'category': '',
-    'summary': '',
-    'description': """hello this is recharge website
-    """,
+    'version': '1.0.2',
+    'category': 'Recharge',
+    'summary': 'Recharge Website',
+    'description': """Recharge Website""",
     'depends': ['base'],
     'data': [
         'security/ir.model.access.csv',
-        'views/recharge.xml',
+        'views/menu.xml'
     ],
     'demo': [
     ],
@@ -19,4 +18,5 @@
     'auto_install': False,
     'assets': {},
     'license': 'LGPL-3',
+    'application': True,
 }
