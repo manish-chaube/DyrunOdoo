@@ -1,7 +1,7 @@
-from odoo import models, fields, api
+from odoo import api, models, fields
 
 
-class Travel(models.Model):
+class Recharge(models.Model):
     _name = 'recharge.recharge'
 
     name = fields.Char(string='Name')

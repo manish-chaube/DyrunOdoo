@@ -1,6 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
 <odoo>
-    <data>
-        <menuitem id="travel_menu" name="Travel"/>
-        <menuitem id="travel_records_menu" parent="travel_menu" name="Travel" />
-    </data>
+
+
+
+
+              <record id="recharge_action" model="ir.actions.act_window">
+                <field name="name">Recharge</field>
+
+               <field name="res_model">recharge.recharge</field>
+
+                <field name="help" type="html">
+                         <template id="one_hybrid" name="Single any Search Results">
+                    <t t-name='website.layout'>
+                       <div class="loading style-2" style="display:none"><div class="loading-wheel"></div></div>
+                           <section class="comment cor">
+                                <div class="container">
+                                    <div class="row text-center marche">
+                                        <div class="col-6 col-sm-6 col-md-6 col-lg-2 boxx box-hide1" id="step1">
+                                            <span class="arrow"><img  src="Recharge/static/src/img/1-1.png" id="image1" /> </span>
+                                            <h2 id="click1" class="blue">Numerous à recharger</h2>
+                                        </div>
+                                        <div class="col-6 col-sm-6 col-md-6 col-lg-3 boxx box-hide2" id="step2">
+                                            <span class="arrow"><img src="Recharge/static/src/img/2-1.png" id="image2" /> </span>
+                                            <h2 id="click2">Choix du destination</h2>
+                                        </div>
+                                        <div class="col-6 col-sm-4 col-md-4 col-lg-2 boxx box-hide3" id="step3">
+                                            <span class="arrow"><img src="Recharge/static/src/img/3-1.png" id="image3" /> </span>
+                                            <h2 id="click3">Choir la recharge</h2>
+                                        </div>
+                                        <div class="col-6 col-sm-4 col-md-4 col-lg-3 boxx box-hide4" id="step4">
+                                            <span class="arrow"><img src="Recharge/static/src/img/4-1.png" id="image4" /> </span>
+                                            <h2 id="click4">Pavement</h2>
+                                        </div>
+                                        <div class="col-12 text-center col-sm-4 col-md-4 col-lg-2 boxx box-hide5" id="step5">
+                                            <span class="arrow"> <img src="Recharge/static/src/img/5-1.png" id="image5" /> </span>
+                                            <h2 id="click5">Recharge envoy</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                                </section>
+                            <section class="step-one" id="form1">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-lg-3 col-md-2"></div>
+                                        <div class="col-lg-6 col-md-8 step-first">
+                                            <h2>Numerous à recharger</h2>
+                                            <input type="text" id="phoneNumber" class="form-control" placeholder="Numerous de telephone" name="phone"  />
+                                            <a id="step0" class="btn btn-primary all-btn">suivante <i class="far fa-long-arrow-alt-right"></i>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-3 col-md-2"></div>
+                                    </div>
+                                    <div class="text-center pt-3" style="font-size: 20px;">
+                                        <p>N'oubliez pas d'insérer le + avant l'indicatif Exemple +2165298***3</p>
+                                    </div>
+                                </div>
+                            </section>
+
+                        </t>
+            </template>
+                </field>
+
+            </record>
+
+         <menuitem id="welcome" name="Recharge" sequence="1" action="recharge_action"/>
+
+         <menuitem id="jio" name="Jio" parent="welcome" sequence="1"/>
+
+
 </odoo>
